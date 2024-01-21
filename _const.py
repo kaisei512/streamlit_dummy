@@ -2,11 +2,8 @@ import os
 import datetime as dt
 import pathlib
 
-from dotenv import load_dotenv
-
 
 ABS_PATH: os.path = str(pathlib.Path(__file__).resolve().parents[2])
-load_dotenv(os.path.join(ABS_PATH, r'config\.env'))
 
 TODAY = dt.date.today()
 MIN_DATE = dt.date(2020,1,1)
